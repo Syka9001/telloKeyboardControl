@@ -1,7 +1,6 @@
 import keyGetter as kg
 from djitellopy import tello
 from time import sleep
-import cv2
 
 kg.init()
 
@@ -51,9 +50,3 @@ def getKeyboardInput(isFlying):
         yw = speed
 
     return [lr, fb, ud, yw, isFlying]
-
-
-while True:
-    ctrl = getKeyboardInput(ctrl[4])
-    drone.send_rc_control(ctrl[0], ctrl[1], ctrl[2], ctrl[3])
-    sleep(0.01)
