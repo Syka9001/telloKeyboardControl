@@ -1,6 +1,5 @@
 import Control as ct
 from djitellopy import tello
-import cv2
 
 kg.init()
 
