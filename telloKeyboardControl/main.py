@@ -1,4 +1,3 @@
-import keyGetter as kg
 import Control as ct
 from djitellopy import tello
 import cv2
