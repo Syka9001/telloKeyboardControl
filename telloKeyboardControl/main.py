@@ -10,20 +10,11 @@ drone.connect()
 
 print(drone.get_battery())
 
-drone.for_back_velocity = 0
-drone.left_right_velocity = 0
-drone.up_down_velocity = 0
-drone.yaw_velocity = 0
-
-drone.speed = 0
-
 drone.streamoff()
 drone.streamon()
 
 # 飛行中かどうか
 isFlying = 0
-# 画面サイズ
-width, height = 480, 270
 
 
 while True:
