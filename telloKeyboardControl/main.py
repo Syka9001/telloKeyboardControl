@@ -18,7 +18,7 @@ isFlying = 0
 
 
 while True:
-    values = ct.getKeyboardInput(isFlying)
+    inputs = ct.getKeyboardInput(isFlying)
 
     isFlying = inputs[4]
     drone.send_rc_control(inputs[0], inputs[1], inputs[2], inputs[3])
