@@ -22,8 +22,4 @@ while True:
 
     isFlying = inputs[4]
     drone.send_rc_control(inputs[0], inputs[1], inputs[2], inputs[3])
-
-    img = drone.get_frame_read().frame
-    img = cv2.resize(img, width, height)
-    cv2.imshow("Camera", img)
-    cv2.waitKey(1)
+    sleep(0.01)
